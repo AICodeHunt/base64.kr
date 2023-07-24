@@ -34,24 +34,7 @@
 		<link rel="icon" href="../image/base64-32.png" sizes="32x32" type="image/png">
 		<link rel="icon" href="../image/base64.png" sizes="64x64" type="image/png">
 		<link rel="canonical" href="https://base64.kr" />
-		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-		<style type="text/css">
-			:root {
-				--primary-color: #3265e1;
-			}
-
-			.head-bg {
-				background-color: var(--primary-color);
-			}
-
-			/* For iPad Portrait Mode */
-			@media (max-width: 820px) {
-				.custom-container {
-					width: 100%;
-					margin: 0 auto;
-				}
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="../tailwind.css">
 	</head>
 	<body class="bg-gray-50">
 		<header class="head-bg text-white py-2 pl-4 pr-4 md:pl-20 md:pr-20">
@@ -70,10 +53,10 @@
 				<textarea id="inputText"
 					class="w-full h-40 sm:h-30 mb-4 p-2 resize-y border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
 					placeholder="Please enter a string to be decoded or encoded as Base64."></textarea>
-				<h3 class="mb-4 text-gray-500">Base64 decoding or encoding result.</h3>
+				<h2 class="mb-4 text-gray-500 text-base">Base64 decoding or encoding result.</h2>
 				<textarea id="outputText"
 					class="w-full h-40 sm:h-30 p-2 border-0 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-blue-50 text-blue-700"
-					placeholder="" readonly></textarea>
+					placeholder="SGVsbG8gV29ybGQh" readonly></textarea>
 				<div id="copyDiv"
 					class="bg-blue-50 text-blue-700 text-left rounded-lg p-2 flex items-center justify-center space-x-2">
 					<span id="copyBtn">Copy</span>
@@ -105,7 +88,7 @@
 		<div class="bg-gray-100 text-gray-500 text-center rounded-lg p-2 text-sm mt-60">
 			Online Base64 Decode and Encode Tools Copyright © <span class="text-blue-700">base64.kr</span>
 		</div>
-		<script src="../script.js" type="text/javascript"></script>
+		<script src="../script.js" type="text/javascript" async></script>
 		<link rel="stylesheet" type="text/css" href="../style.css">
 	</body>
 </html>
